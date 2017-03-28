@@ -17,22 +17,39 @@
  @import 'bootstrap-sprockets';
  @import 'bootstrap';
  
- 
+//typography styles
  h1, h2, h3 {
     font-family: 'Open Sans', sans-serif;
 }
+
+//bg gradient
 
 .navbar, .home-callout { //gradient provided by  @_ighosh @ UIgradients.com
   color: white; 
   background: #ddd6f3; /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #ddd6f3 , #faaca8); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #ddd6f3 , #faaca8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  margin-top: -20px; 
-  padding-top: 50px; 
-  padding-bottom: 100px;
   
 }
 
+// nav styles 
 .navbar {
-  border: none;
+  border: none
 }
+
+.navbar-default .navbar-brand, 
+.navbar-default .navbar-nav > li > a  {
+  color: white;
+  &:hover {
+    color: white; 
+    opacity: 0.75;
+  }
+}
+
+.home-callout{
+  color: white;
+  margin-top: -20px; 
+  padding-top: 50px; 
+  padding-bottom: 100px;
+}
+
