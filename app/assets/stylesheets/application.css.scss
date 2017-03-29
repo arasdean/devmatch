@@ -39,6 +39,23 @@
   border: none
 }
 
+.navbar-default .navbar-toggle .icon-bar{
+  background-color: white;
+}
+.navbar-default .navbar-toggle{
+  border: 2px solid white;
+  &:hover, &:focus{
+    background-color: #ddd6f3;
+  }
+}
+
+
+
+.navbar-brand {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800; 
+}
+
 .navbar-default .navbar-brand, 
 .navbar-default .navbar-nav > li > a  {
   color: white;
