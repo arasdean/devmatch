@@ -2,3 +2,25 @@
   <h1> Welcome to DevMatch!</h1>
   <h3> A membership site where entrepeneurs can find devs!</h3>
 </div>
+<div class="container home-signup-links"> 
+  <div class="row"> 
+    <div class ="col-md-6"> 
+     <div class="well">
+       <h2 class="text-center"> basic membership </h2> 
+       <h4> Sign up for free with a basic account to see which developers out here! </h4>
+       <br /> 
+       <%= link_to "Sign up with basic", new_user_registration_path(plan: @basic_plan.id), class: "btn btn-primary btn-lg btn-block" %> 
+      </div>
+    </div>
+    <div class ="col-md-6"> 
+      <div class="well">
+       <h2 class="text-center"> pro membership </h2> 
+       <h4> For $10 a month, you can get access to the contact info! </h4>
+       <br /> 
+       <br /> 
+       <%= link_to "Sign up for Pro!", new_user_registration_path(plan: @pro_plan.id), class: "btn btn-success btn-lg btn-block" %> 
+      </div>
+    </div>
+  </div>
+</div>
+
