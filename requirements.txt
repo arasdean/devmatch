@@ -6,10 +6,10 @@ Memberships:
 
 
 Strip Integration 
-* Users should have a customer token (stripe0 
-* Javascript prevent pro form from submitting 
+* Users should have a customer token (stripe0) ---- 
+* Javascript prevent pro form from submitting  ----
 and send card info to stripe who will return card token
-* JS should send user fields and card token to our rails app for validation.
+* JS should send user fields and card token to our rails app for validation. ---- 
 Rails app should validate the user fieldsl Rails app will note whether plan 1 or plan 2
 * Once validated rails should send user info (email/plan id/card token) --> stripe server
 stripe will then create a subscription and send back customer token. 
@@ -17,3 +17,7 @@ stripe will then create a subscription and send back customer token.
 
 ** note the difference between customer and CARD token. 
 
+card 4111111111111111
+123
+123456
+123456
