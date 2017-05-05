@@ -21,3 +21,10 @@ card 4111111111111111
 123
 123456
 123456
+
+
+User Profiles
+* each user should have one profile 
+* User should see lin kto new profile form upon signing up 
+* User profile should have a profie picture 
+* User should be able to view all user profiles 
