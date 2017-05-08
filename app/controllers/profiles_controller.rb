@@ -15,7 +15,22 @@ class ProfilesController < ApplicationController
       end
     end
     
-    
+    def edit
+      #this is for get requests made to /users/:user_id/profile/edit
+      @user = User.find( params[:user_id]) 
+      @profile = @user.profile
+    end 
+    # PUT req to /isers/user_id/profile
+    def update
+      @user = User.find(params[:user_id]) 
+      @profile = @user.profile
+      if @profile.update_attributes(profile_params)
+        flash[:success] = "Profile Updated" 
+        redirect_to root
+      else
+        render action: :edit 
+      end 
+    end
     
     private
       def profile_params
